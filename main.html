@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicaciones satelitales | Asignacion 6</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/2c23f77634.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <span id="courtain"></span>
+
+    <header>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#inicio" class="nav-item">
+                        <h6> <i class="fas fa-satellite-dish menu-icon"></i> Inicio </h6>
+                    </a></li>
+                <li><a href="#AOCS" class="nav-item">
+                        <h6> <i class="fas fa-satellite-dish menu-icon"></i> Subsistema de control orbital, posicion y propulsion
+                            (AOCS) </h6>
+                    </a></li>
+                <li><a href="#energia" class="nav-item">
+                        <h6> <i class="fas fa-satellite-dish menu-icon"></i> Subsistema de energia </h6>
+                    </a></li>
+                <li><a href="#termico" class="nav-item">
+                        <h6> <i class="fas fa-satellite-dish menu-icon"></i> Subsistema de control termico </h6>
+                    </a></li>
+                <li><a href="#ODBH" class="nav-item">
+                        <h6> <i class="fas fa-satellite-dish menu-icon"></i> Subsistema de procesado de datos (ODBH)
+                        </h6>
+                    </a></li>
+                <li><a href="#telemetria" class="nav-item">
+                        <h6> <i class="fas fa-satellite-dish menu-icon"></i> Subsistema de Telemando, Telemetría y
+                            Seguimiento (TT&C) </h6>
+                    </a></li>
+            </ul>
+
+            <span id="open-menu-btn" onclick="openMenu()">
+                <div class="parallel-bar"></div>
+                <div class="parallel-bar"></div>
+                <div class="parallel-bar"></div>
+            </span>
+
+            <span id="close-menu-btn" onclick="closeMenu()">
+                <div class="crossed-bar"></div>
+                <div class="crossed-bar"></div>
+            </span>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="inicio" class="container">
+            <h2 class="section-title">Subsistemas de un satelite</h2>
+            <ul>
+                <li><a href="#AOCS"> Subsistema de control orbital, posicion y propulsion (AOCS) </a></li>
+                <li><a href="#energia"> Subsistema de energia </a></li>
+                <li><a href="#termico"> Subsistema de control termico </a></li>
+                <li><a href="#ODBH"> Subsistema de procesado de datos (ODBH) </a></li>
+                <li><a href="#telemetria"> Subsistema de Telemando, Telemetría y Seguimiento (TT&C) </a></li>
+            </ul>
+        </section>
+
+        <section id="AOCS" class="container">
+            <h2 class="section-title">Subsistema de control orbital, posicion y propulsion (AOCS)</h2>
+            <ul>
+                <li>Controla la actitud nominal del satelite</li>
+                <li>Mantiene la orbita nominal</li>
+                <li>Enciende y apaga las unidades, realiza acciones de control orbital</li>
+                <li>Genera telemetria mediante lectura de sensores y estado de las unidades</li>
+                <li>Detecta fallos y se recupera de los mismos</li>
+                <li>Ejecta maniobras mediante secuencias de comandos en un tiempo definido</li>
+            </ul>
+        </section>
+
+        <section id="energia" class="container">
+            <h2 class="section-title">Subsistema de energia</h2>
+            <p>Generación, almacenamiento y distribución de energía eléctrica necesaria para la operación de los equipos
+                del satélite en función de su eficiencia, esta constituido por:</p>
+            <ul>
+                <li>Fuentes de energia primaria (paneles solares)</li>
+                <li>Fuentes de energia secundarias (baterias)</li>
+                <li>Elementos de acondicionamiento y proteccion</li>
+            </ul>
+        </section>
+
+        <section id="termico" class="container">
+            <h2 class="section-title">Subsistema de control termico</h2>
+            <p>Mantiene dentro de unos márgenes de temperatura adecuados los equipos y la estructura del satélite. Las
+                deformaciones estructurales deben minimizarse para asegurar un funcionamiento correcto del
+                apuntamientodel satélite y del funcionamiento de los subsistemas. Diferentes márgenes de temperatura de
+                funcionamiento: </p>
+            <ul>
+                <li>baterias: 0 a +20ªC</li>
+                <li>Células solares: -100 ºC a +50 ºC</li>
+                <li>Equipos electrónicos: -10 ºC a +60 ºC</li>
+                <li>Tanques de combustible: +10ºC a +50 ºC</li>
+                <li>Sensores de infrarrojo: -20 ºC a +45 ºC</li>
+                <li>Antenas:-150ºC a +80ºC</li>
+            </ul>
+        </section>
+
+
+        <section id="ODBH" class="container">
+            <h2 class="section-title">Subsistema de procesado de datos (ODBH)</h2>
+            <p>Controlar y reconfigurar el satélite (sobre todo, cuando no está visible desde Tierra), para mejorar las
+                prestaciones del sistema y procesar los datos recibidos o transmitidos, entre sus funciones se
+                encuentra:</p>
+            <ul>
+                <li>Monitorizar todos los aspectos de la operación e informar del estado del satélite a la estación de
+                    tierra</li>
+                <li>Decodificación y procesado de telemetría para envío a Tierra</li>
+                <li>Decodificación, procesado y distribución de telecomandos recibidos de Tierra</li>
+                <li>Capacidad de reprogramar el código durante la misión en órbita</li>
+                <li>Permitir un cierto grado de autonomía</li>
+                <li>Control y gestión en tiempo real</li>
+            </ul>
+        </section>
+
+
+        <section id="telemetria" class="container">
+            <h2 class="section-title">Subsistema de Telemando, Telemetría y Seguimiento (TT&C)</h2>
+            <p>Mide los parámetros orbitales, el estado del satélite y controla el funcionamiento del satélite</p>
+            <ul>
+                <li>Provee comunicaciones entre el satelite y las estaciones en tierra</li>
+                <li>Es un requerimiento para todos los satelites indiferentemente del proposito</li>
+                <li>Permite conocer el estado del satelite asi como su posicion exacta y controlar el mismo</li>
+            </ul>
+        </section>
+
+    </main>
+    <!-- 
+    <footer>
+
+    </footer>
+ -->
+    <script src="./JS/toggle_menu.js"></script>
+</body>
+
+</html>
